@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(
     cors({
-      origin: "http://localhost:5173",
+      origin: "https://655b93c34cc967009304bff4--cool-smakager-a5b500.netlify.app",
       credentials: true,
     })
   );
