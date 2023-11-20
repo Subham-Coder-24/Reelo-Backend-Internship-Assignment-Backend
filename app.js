@@ -16,7 +16,9 @@ app.use(
   );
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://botb20854:L8ARjsI4TZdLchPq@cluster0.pcgalin.mongodb.net/questionPaperDB?retryWrites=true&w=majority');
-
+app.get('/', async (req, res) => {
+    res.send("server is working fine")
+})
 
 // Only For testing propose get all Question including easy medium hard
 app.get('/questions', async (req, res) => {
